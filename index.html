@@ -20,13 +20,14 @@
 <li><a href="#menu">Thực đơn</a></li>
 <li><a href="#review">Đánh giá</a></li>
 <li><a href="#contact">Liên hệ</a></li>
+<li><a href="#" onclick="toggleCart()">Giỏ Hàng</a></li>
 </ul>
 </nav>
 
 <section class="hero">
 <div class="hero-content">
 <h1>PHỞ ĐĂNG HOA</h1>
-<p>MÚT CHÙN CHỤT</p>
+<p>Nước dùng hầm 12 tiếng • Chuẩn vị Hà Nội</p>
 <button class="btn">ĐẶT MÓN NGAY</button>
 </div>
 </section>
@@ -37,32 +38,54 @@
 <div class="menu-grid">
 
 <div class="card">
-<img src="https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/29/ban-gai-le-minh-binh-hagl4-1688037867395-1688037867487982366224.jpg">
+<img src="https://kenh76.vn/wp-content/uploads/2025/08/gai-xinh-mac-bikini-nho-4k.webp">
 <div class="content">
-<h3>Phở Bò Đặc Biệt</h3>
+<h3>Phở Bể Bơi</h3>
 <p>Bò tái, gầu, nạm, viên.</p>
-<div class="price">75.000đ</div>
-<button class="order-btn">Đặt Món</button>
+<div class="price">3.000.000đ</div>
+<button class="order-btn" onclick="addToCart('Phở Bể Bơi', 3000000)">
+  Đặt Món
+</button>
 </div>
 </div>
 
 <div class="card">
-<img src="https://cdn.24h.com.vn/upload/4-2018/images/2018-12-28/1545991050-295-anh-1-1545980578-width660height660.jpg">
+<img src="https://hoichimtroi.com/wp-content/uploads/2025/07/anh-gai-xinh-mac-bikini-di-bien-39-1.jpg">
 <div class="content">
-<h3>Phở Gà Ta</h3>
+<h3>Phở Bãi Biển</h3>
 <p>Gà ta thả vườn.</p>
-<div class="price">65.000đ</div>
-<button class="order-btn">Đặt Món</button>
+<div class="price">2.500.000đ</div>
+<button class="order-btn" onclick="addToCart('Phở Bãi Biển', 2500000)">Đặt Món</button>
 </div>
 </div>
 
 <div class="card">
-<img src="https://giathuecanho.net/wp-content/uploads/2026/04/anh-gai-dep-mac-bikini-hai-manh-cuc-ky-goi-cam-1.webp">
+<img src="https://meanhanime.edu.vn/wp-content/uploads/2026/02/Anh-gai-mac-bikini-lot-khe-anh-mat-thieu-dot-long-nguoi-manh-liet.jpg">
 <div class="content">
-<h3>Phở Tái Lăn</h3>
+<h3>Phở Bedroom</h3>
+<p>Thịt mềm ngọt.</p>
+<div class="price">5.000.000đ</div>
+<button class="order-btn" onclick="addToCart('Phở Bedroom', 5000000)">Đặt Món</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://media.istockphoto.com/id/1448989536/sv/foto/young-non-binary-person-make-up-an-androgynous-person-he-shows-his-happy-biceps-with-self.jpg?s=612x612&w=0&k=20&c=lKQ411YHlQXKybWZWdOoZH8hNbD2Zz8BcDM8b-QqT_g=">
+<div class="content">
+<h3>Phở Vai Gãy</h3>
+<p>Thịt dai, Châu Phi</p>
+<div class="price">ĐÉO LẤY TIỀN</div>
+<button class="order-btn" onclick="addToCart('Phở Vai Gãy', 0)">Đặt Món</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i-giadinh.vnecdn.net/2025/11/17/Pho-bo-Ha-Noi-7-vnexpress-1763-7388-9585-1763372391.jpg">
+<div class="content">
+<h3>Phở REAL</h3>
 <p>Thịt bò mềm ngọt.</p>
 <div class="price">79.000đ</div>
-<button class="order-btn">Đặt Món</button>
+<button class="order-btn" onclick="addToCart('Phở REAL', 79000)">Đặt Món</button>
 </div>
 </div>
 
@@ -75,21 +98,24 @@
 <div class="review-box">
 
 <div class="review-card">
-<div class="stars">★★★★★</div>
-<p>Phở ngon cực, nước dùng rất đậm đà.</p>
-<h4>- HUY KIM</h4>
+  <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/471230298_1093838145857275_5054110301026507400_n.jpg?stp=dst-jpg_tt6&cstp=mx750x998&ctp=s750x998&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHxvddkV9h03ZLaxd-1ZTM2quRjDsgvXJOq5GMOyC9ck635NJGsNX4PxMZxnTFBT2ufdasC-CXtZpVKpbOzVh9f&_nc_ohc=cjaPwnzu2BgQ7kNvwHTpPTh&_nc_oc=AdpM-FaT4VvMMzz5ZARrDCFLh-lh-dSV39RzHriwH4WrxMNUfw-pdwyBOBqiK3m2K0tsCHPaqIemjJqFZPLQfi_Y&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=rW1wpjSAdistq-ew2ipscw&_nc_ss=7b2a8&oh=00_Af8VVJ6QzUGBpeKvqb5XQZkAH4x87WGj19m39QoEaFShlw&oe=6A30B8B4" class="avatar">
+  <div class="stars">★★★★★</div>
+  <p>Phở ngon cực, tôi bú khỏe vl</p>
+  <h4>- Anh Dũng Xuân</h4>
 </div>
 
 <div class="review-card">
-<div class="stars">★★★★★</div>
-<p>Phở trắng, thơm.</p>
-<h4>- THÁI BÍM</h4>
+  <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.15752-9/421224021_1337804810945724_6273923320353902234_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGWx4QV1TZSx3Ky5F4NkOmaalWcAZlkl3dqVZwBmWSXd5RXimAnncTXxgzOPuCZtY_uLNAO5MBh3w1dogmdXb_W&_nc_ohc=YfJJmJPqMc0Q7kNvwGiirXA&_nc_oc=AdqLqj_4T8KS4boLBpzpuBsflfgucoKgy-4mwU2O6j83zQjd96VcXDoenP3p7G0PMmgnoKwPCnOndy1H7TUgW1T_&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_ss=7a22e&oh=03_Q7cD5gGk01tdUUepnfD9wqOkjvxem0Z7bj1m0fO1eLanUxVviQ&oe=6A525797" class="avatar">
+  <div class="stars">★★★★★</div>
+  <p>Phở trắng, tròn và thơm</p>
+  <h4>- Anh Thái Bím</h4>
 </div>
 
 <div class="review-card">
-<div class="stars">★★★★★</div>
-<p>Ăn 3 lần tuần nào cũng đặt.</p>
-<h4>- DŨNG XUÂN</h4>
+  <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/481994198_574059132321460_4881483367043727711_n.jpg?stp=dst-jpg_tt6&cstp=mx938x1280&ctp=s938x1280&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFJAXV_aCVRPPJfaDkuOpiirKOqrH6DAQqso6qsfoMBCvYjFdpmOK5u_C__r2QtsZa_DlCO-VdoWv5y5nUOYmQg&_nc_ohc=3DhIaIHXSQ4Q7kNvwHORXMY&_nc_oc=Adof8n0ZHaRKglKQnGVKE0z8C-bvBBZyOq6u4oT6sls3bww3yXG57-7eIe9QMiV_XTWehQdNH3WV9TljM8dx6YIp&_nc_zt=23&_nc_ht=scontent.fhan14-2.fna&_nc_gid=PLKGvrzwmESg35V37l5JhA&_nc_ss=7b2a8&oh=00_Af91URzAuz4CLrRSp1nzUBRa_RjgOnBbQ72QFstYm1gD2Q&oe=6A308E6E" class="avatar">
+  <div class="stars">★</div>
+  <p>Mua nhầm Phở Vai Gãy mà không được hoàn hàng</p>
+  <h4>- Anh Huy Kim</h4>
 </div>
 
 </div>
@@ -98,9 +124,41 @@
 <footer id="contact">
 <h3>🍜 PHỞ ĐĂNG HOA</h3>
 <p>📍 PHÙ LƯU</p>
-<p>📞 0339683538</p>
-<p>⏰ 06:00 - 22:00</p>
+<p>📞 0123 456 789</p>
+<p>⏰ 23:00 - 5:00</p>
 </footer>
 
+<div id="cart-panel" class="cart-panel">
+  <div class="cart-header">
+    <h2>🛒 Giỏ hàng</h2>
+    <button onclick="toggleCart()">✖</button>
+  </div>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <p>Tổng: <span id="cart-total">0</span>đ</p>
+    <button onclick="openQR()">Thanh toán</button>
+  </div>
+</div>
+
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<div id="qr-modal" class="qr-modal">
+  <div class="qr-box">
+    <h2>Thanh toán QR</h2>
+
+    <!-- QR IMAGE -->
+    <img src="qr.jpg" alt="QR Code">
+
+    <p id="qr-money"></p>
+
+    <button onclick="closeQR()">Đóng</button>
+  </div>
+</div>
+
+<div id="overlay" class="overlay" onclick="closeQR()"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
