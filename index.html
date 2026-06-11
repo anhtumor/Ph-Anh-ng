@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHỞ ĐĂNG HOA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fafafa;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ffb703;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ffb703;
+color:black;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+/* MENU */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.content{
+padding:20px;
+}
+
+.content h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:24px;
+font-weight:700;
+color:#e63946;
+margin:15px 0;
+}
+
+.order-btn{
+width:100%;
+padding:12px;
+border:none;
+background:#ffb703;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* REVIEW */
+
+.review{
+background:#fff7e6;
+}
+
+.review-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.08);
+}
+
+.stars{
+color:gold;
+font-size:22px;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer h3{
+margin-bottom:15px;
+color:#ffb703;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav ul{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🍜 PHỞ TÚ LÊ</div>
+
+<ul>
+<li><a href="#">Trang chủ</a></li>
+<li><a href="#menu">Thực đơn</a></li>
+<li><a href="#review">Đánh giá</a></li>
+<li><a href="#contact">Liên hệ</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>PHỞ ĐĂNG HOA</h1>
+
+<p>Nước dùng hầm 12 tiếng • Chuẩn vị Hà Nội</p>
+
+<button class="btn">
+ĐẶT MÓN NGAY
+</button>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">THỰC ĐƠN NỔI BẬT</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43">
+<div class="content">
+<h3>Phở Bò Đặc Biệt</h3>
+<p>Bò tái, gầu, nạm, viên.</p>
+<div class="price">75.000đ</div>
+<button class="order-btn">Đặt Món</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841">
+<div class="content">
+<h3>Phở Gà Ta</h3>
+<p>Gà ta thả vườn.</p>
+<div class="price">65.000đ</div>
+<button class="order-btn">Đặt Món</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555126634-323283e090fa">
+<div class="content">
+<h3>Phở Tái Lăn</h3>
+<p>Thịt bò mềm ngọt.</p>
+<div class="price">79.000đ</div>
+<button class="order-btn">Đặt Món</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="review" id="review">
+
+<h2 class="title">FEEDBACK</h2>
+
+<div class="review-box">
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>Phở ngon cực, nước dùng rất đậm đà.</p>
+<h4>- HUY KIM</h4>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>Giao nhanh, đóng gói sạch sẽ.</p>
+<h4>- THÁI BÍM</h4>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>Ăn 3 lần tuần nào cũng đặt.</p>
+<h4>- DŨNG XUÂN</h4>
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h3>🍜 PHỞ ĐĂNG HOA</h3>
+
+<p>📍 PHÙ LƯU</p>
+
+<p>📞 0339683538</p>
+
+<p>⏰ 06:00 - 22:00</p>
+
+</footer>
+
+</body>
+</html>
