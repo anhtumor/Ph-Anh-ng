@@ -20,6 +20,9 @@
 <li><a href="#menu">Thực đơn</a></li>
 <li><a href="#review">Đánh giá</a></li>
 <li><a href="#contact">Liên hệ</a></li>
+<li><a href="#about">Giới thiệu</a></li>
+<li><a href="#gallery">Hình ảnh</a></li>
+<li><a href="#hours">Giờ mở cửa</a></li>
 <li><a href="#" onclick="toggleCart()">Giỏ Hàng</a></li>
 </ul>
 </nav>
@@ -30,6 +33,34 @@
 <p>Nước dùng hầm 12 tiếng • Chuẩn vị Hà Nội</p>
 <button class="btn">ĐẶT MÓN NGAY</button>
 </div>
+</section>
+
+<section id="about">
+  <h2 class="title">CÂU CHUYỆN PHỞ ĐĂNG HOA</h2>
+
+  <div class="about-box">
+    <p>
+      Phở Đăng Hoa được thành lập với mong muốn mang đến hương vị phở truyền thống
+      đậm chất Hà Nội. Nước dùng được ninh từ xương bò trong nhiều giờ, kết hợp
+      cùng các loại gia vị tự nhiên tạo nên vị ngọt thanh đặc trưng.
+    </p>
+
+    <p>
+      Chúng tôi cam kết sử dụng nguyên liệu tươi mới mỗi ngày để đảm bảo chất lượng
+      tốt nhất cho khách hàng.
+    </p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="title">HÌNH ẢNH QUÁN</h2>
+
+  <div class="gallery-grid">
+    <img src="https://dltm-cdn.vnptit3.vn/resources/portal/Images/QNM/hoian.qnm/p_anh/panh_1_3910874.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0rNF54tW2OoYA9g1FVxiMsEfUKvw-UhkmQ&s">
+    <img src="https://vcdn1-dulich.vnecdn.net/2017/12/15/5-3206-1513326833.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=Vg9D16ipaZykH1SBgGYi-w">
+    <img src="https://cdn.tgdd.vn/Files/2015/06/22/657956/65.jpg">
+  </div>
 </section>
 
 <section id="menu">
@@ -92,6 +123,35 @@
 </div>
 </section>
 
+<section class="stats">
+
+<div class="stat">
+<h2>3</h2>
+<p>Bát phở đã bán</p>
+</div>
+
+<div class="stat">
+<h2>3.6★</h2>
+<p>Đánh giá trung bình</p>
+</div>
+
+<div class="stat">
+<h2>Chưa chính thức</h2>
+<p>Hoạt động</p>
+</div>
+
+</section>
+
+<section id="hours">
+  <h2 class="title">⏰ GIỜ MỞ CỬA</h2>
+
+  <div class="hours-box">
+    <p>📅 Thứ 2 - Thứ 6: 06:00 - 22:00</p>
+    <p>🎉 Thứ 7 - Chủ nhật: 05:00 - 23:00</p>
+  </div>
+</section>
+
+
 <section class="review" id="review">
 <h2 class="title">FEEDBACK</h2>
 
@@ -121,11 +181,39 @@
 </div>
 </section>
 
+<section>
+<h2 class="title">MÓN BÁN CHẠY</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<span class="best-seller">TOP 1:</span>
+<div class="card">
+<img src="https://meanhanime.edu.vn/wp-content/uploads/2026/02/Anh-gai-mac-bikini-lot-khe-anh-mat-thieu-dot-long-nguoi-manh-liet.jpg">
+<div class="content">
+<h3>Phở Bedroom</h3>
+<p>Thịt mềm ngọt.</p>
+<div class="price">5.000.000đ</div>
+<button class="order-btn" onclick="addToCart('Phở Bedroom', 5000000)">Đặt Món</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
 <footer id="contact">
 <h3>🍜 PHỞ ĐĂNG HOA</h3>
 <p>📍 PHÙ LƯU</p>
 <p>📞 0123 456 789</p>
 <p>⏰ 23:00 - 5:00</p>
+<iframe
+src="https://www.google.com/maps/embed?pb=..."
+width="100%"
+height="300"
+style="border:0;"
+loading="lazy">
+</iframe>
 </footer>
 
 <div id="cart-panel" class="cart-panel">
