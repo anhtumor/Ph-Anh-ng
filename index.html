@@ -9,6 +9,23 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<div id="auth-modal" class="auth-modal">
+  <div class="auth-box">
+    <span class="close-auth" onclick="closeAuth()">✖</span>
+
+```
+<h2 id="auth-title">Đăng nhập</h2>
+
+<input type="text" id="username" placeholder="Tên đăng nhập">
+<input type="password" id="password" placeholder="Mật khẩu">
+
+<button id="auth-btn" onclick="handleAuth()">
+  Đăng nhập
+</button>
+```
+
+  </div>
+</div>
 
 <body>
 
@@ -23,8 +40,13 @@
 <li><a href="#about">Giới thiệu</a></li>
 <li><a href="#gallery">Hình ảnh</a></li>
 <li><a href="#hours">Giờ mở cửa</a></li>
+<li><a href="#" onclick="openLogin()">Đăng nhập</a></li>
+<li><a href="#" onclick="openRegister()">Đăng ký</a></li>
 <li><a href="#" onclick="toggleCart()">Giỏ Hàng</a></li>
 </ul>
+
+<div id="user-display"></div>
+
 </nav>
 
 <section class="hero">
@@ -40,9 +62,27 @@
 
   <div class="about-box">
     <p>
-      Phở Đăng Hoa được thành lập với mong muốn mang đến hương vị phở truyền thống
-      đậm chất Hà Nội. Nước dùng được ninh từ xương bò trong nhiều giờ, kết hợp
-      cùng các loại gia vị tự nhiên tạo nên vị ngọt thanh đặc trưng.
+      Ngày xưa, tại vùng quê Phù Lưu, có một cậu bé tên Đăng Hoa. Cậu lớn lên trong hoàn cảnh khó khăn, nhiều lần đi ngang quán phở mà chỉ dám đứng nhìn vì không đủ tiền để ăn. Mùi nước dùng thơm ngọt khiến cậu luôn nuôi trong lòng một ước mơ giản dị: “Giá như mình cũng được ăn một bát phở như thế…”
+
+Một ngày mùa đông, người bạn của cậu là Tú Lê tình cờ gặp và rủ cậu đi ăn phở. Hôm đó, lần đầu tiên Đăng Hoa được ngồi trong quán phở ấm áp, ăn một bát phở nóng hổi và nghe người bạn của mình khen ngon nức nở.
+
+Khoảnh khắc ấy đã thay đổi mọi thứ.
+
+Từ một cậu bé chỉ biết đứng nhìn, Đăng Hoa bắt đầu nuôi ước mơ: mở một quán phở của riêng mình ở Phù Lưu, nơi ai cũng có thể ăn phở ngon mà không phải buồn vì thiếu thốn.
+
+Nhiều năm sau, sau khi cố gắng không ngừng, cậu đã trở về quê và mở ra quán:
+
+🍜 PHỞ ĐĂNG HOA
+
+Một quán phở nhỏ nhưng ấm áp, nơi mỗi bát phở đều mang theo ký ức, sự cố gắng và tình bạn năm xưa với Tú Lê.
+
+Ngày khai trương, Tú Lê quay lại, mỉm cười và nói:
+— “Tớ biết cậu sẽ làm được mà.”
+
+Đăng Hoa chỉ cười:
+— “Nhờ cậu hôm đó đấy.”
+
+Và từ đó, Phở Đăng Hoa không chỉ là một quán ăn, mà là nơi bắt đầu của một giấc mơ được nuôi lớn từ một bát phở ấm lòng ở Phù Lưu.
     </p>
 
     <p>
@@ -182,7 +222,7 @@
 </section>
 
 <section>
-<h2 class="title">MÓN BÁN CHẠY</h2>
+<h2 class="title">Best Seller</h2>
 
 <div class="menu-grid">
 
