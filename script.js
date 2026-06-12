@@ -163,3 +163,38 @@ function updateNavbar(){
 
   }
 }
+
+window.addEventListener("click", function () {
+  const music = document.getElementById("bg-music");
+  if (music) {
+    music.play();
+  }
+}, { once: true });
+
+const playlist = [
+  "music/Podcast.mp3",
+  "music/Chocon.mp3"
+];
+
+let index = 0;
+const audio = document.getElementById("bg-music");
+
+function playSong() {
+  audio.src = playlist[index];
+  audio.play().catch(err => console.log(err));
+}
+
+// khi hết bài → chuyển bài tiếp
+audio.addEventListener("ended", () => {
+  index = (index + 1) % playlist.length;
+  playSong();
+});
+
+// bắt đầu khi user click (Chrome bắt buộc)
+window.addEventListener("click", () => {
+  playSong();
+}, { once: true });
+
+window.addEventListener("click", () => {
+  playSong();
+}, { once: true });
